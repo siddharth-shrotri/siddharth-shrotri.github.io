@@ -1,8 +1,70 @@
----
-title: Home
-layout: home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Name – Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/5c4b5e5c10.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="wrapper">
+  <nav class="top-nav">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="articles.html">Publications</a>
+    <a href="resume.html">Résumé</a>
+  </nav>
+</header>
 
-{% include about/about.html %}
-{% include projects/projects.html limit=4 %}
-{% include publications/publications.html limit=6 %}
+<main class="wrapper">
+  <!-- Hero -->
+  <section class="hero">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1>Robotics Prototyping Club</h1>
+    <p class="subtitle">WPI Student Organization</p>
+    <p>
+      We're a group of students from Worcester Polytechnic Institute who build
+      specialized robotics projects and share clean hobbyist practices.
+    </p>
+    <p class="interests mt-2"><strong>Interests:</strong> Robotics, 3D Printing, Embedded Computing, Computer Vision, Machine Learning</p>
+
+    <!-- Social -->
+    <div class="icon-bar">
+      <a href="#"><i class="fas fa-home"></i></a>
+      <a href="mailto:you@wpi.edu"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/your-handle"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <!-- Bio -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I’m <strong>Your&nbsp;Name</strong>, a Robotics Engineering student at WPI passionate
+      about control theory, mechanical design, and embedded software. From
+      micromouse maze-solvers to soft-robotic actuators, I love bringing ideas
+      into motion.
+    </p>
+  </section>
+
+  <!-- Gateway Cards -->
+  <div class="cta-row">
+    <a href="projects.html" class="cta-card">
+      <h3>Projects</h3>
+      <p>Hardware hacks, competition robots, web apps…</p>
+    </a>
+    <a href="articles.html" class="cta-card">
+      <h3>Articles</h3>
+      <p>Write-ups, tutorials and conference papers.</p>
+    </a>
+    <a href="resume.html" class="cta-card">
+      <h3>Résumé</h3>
+      <p>Full background, skills &amp; experience.</p>
+    </a>
+  </div>
+</main>
+
+<footer><p>© 2025 Your Name</p></footer>
+</body>
+</html>
