@@ -2,116 +2,130 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Résumé – Your Name</title>
+  <title>Résumé – Siddharth Shrotri</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/5c4b5e5c10.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header class="wrapper">
-  <nav class="top-nav">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="articles.html">Publications</a>
-    <a href="resume.html">Résumé</a>
-  </nav>
-</header>
+  <header class="wrapper">
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="cad.html">CAD Modeling</a>
+      <a href="resume.html">Résumé</a>
+    </nav>
+  </header>
 
-<main class="wrapper resume-wrapper">
+  <main class="wrapper resume-wrapper">
+    <!-- Contact Sidebar -->
+    <aside class="resume-aside">
+      <ul>
+        <li><i class="fas fa-envelope"></i> <a href="mailto:siddharthshrotri05@gmail.com">siddharthshrotri05@gmail.com</a></li>
+        <li><i class="fab fa-github"></i> <a href="https://github.com/your-handle">github.com/your-handle</a></li>
+        <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/siddharth-shrotri">linkedin.com/in/siddharth-shrotri</a></li>
+      </ul>
+    </aside>
 
-  <!-- ===== LEFT COLUMN – contact ===== -->
-  <aside class="resume-aside">
-    <ul>
-      <li><i class="fas fa-link"></i><a href="https://your-site.com">wpi-rpc.github.io</a></li>
-      <li><i class="fas fa-envelope"></i><a href="mailto:you@wpi.edu">you@wpi.edu</a></li>
-      <li><i class="fab fa-github"></i><a href="https://github.com/your-handle">github.com/your-handle</a></li>
-      <li><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/your-id">linkedin.com/in/your-id</a></li>
-    </ul>
-  </aside>
+    <div class="resume-main">
+      <!-- Name and Address -->
+      <div style="display:flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+        <h1>Siddharth Shrotri</h1>
+        <p class="address">
+          Worcester, MA, USA
+        </p>
+      </div>
 
-  <!-- ===== RIGHT COLUMN – all sections ===== -->
-  <div class="resume-main">
+      <!-- Education -->
+      <section class="resume-section">
+        <h2>Education</h2>
+        <h3>Worcester Polytechnic Institute (WPI), Worcester, MA <span style="float:right;">Aug 2024 &ndash; May 2026 (expected)</span></h3>
+        <p>Master of Science in Robotics Engineering</p>
+        <ul>
+          <li>GPA: 3.76/4.0 (after first semester)</li>
+          <li>EDU Bridge Connect Scholarship (merit-based recipient)</li>
+          <li>Relevant Coursework: Machine Learning, Robot Dynamics, Motion Planning</li>
+        </ul>
+        <h3>Savitribai Phule Pune University (SPPU), Pune, India <span style="float:right;">July 2018 &ndash; June 2022</span></h3>
+        <p>Bachelor of Engineering in Mechanical Engineering</p>
+        <ul>
+          <li>GPA: 9.63/10 (≈ 3.9/4.0)</li>
+          <li>Member of Team Automatons (college robotics team; participated in ABU Robocon competitions)</li>
+        </ul>
+      </section>
 
-    <!-- Header / name -->
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap;">
-      <h1>Your Name</h1>
-      <p class="address">
-        100 Institute Rd<br>
-        Worcester, MA&nbsp;01609 USA
-      </p>
+      <!-- Skills -->
+      <section class="resume-section">
+        <h2>Skills</h2>
+        <p><strong>Mechanical:</strong> Robotics &amp; Automation, CAD Modeling, Mechanism Design &amp; Analysis, Manufacturing (machining, 3D printing), Mechanical Systems</p>
+        <p><strong>Electrical:</strong> Arduino, sensors, controllers, PCB systems, embedded electronics</p>
+        <p><strong>Software:</strong> Python, C++, ROS, SolidWorks, ANSYS, AutoCAD, OMPL</p>
+        <p><strong>Certifications:</strong> Autodesk CAD/CAM/CAE for Mechanical Engineering Specialization (Autodesk)</p>
+        <p><strong>Soft Skills:</strong> Problem-solving, analytical thinking, research, debugging, teamwork, adaptability, communication, time management, organization, leadership, collaboration, initiative</p>
+      </section>
+
+      <!-- Work Experience -->
+      <section class="resume-section">
+        <h2>Work Experience</h2>
+        <h3>Graduate Engineer Trainee – CIE Automotive India Ltd. <span style="float:right;">Jul 2022 &ndash; Jul 2023</span></h3>
+        <ul>
+          <li>Designed and automated robotic workflows, converting manual manufacturing processes into robotic automation systems using ABB and KUKA robots (improved efficiency by 10–15%).</li>
+          <li>Assisted in optimizing cycle times and improving precision in robotic motion control and automation processes.</li>
+          <li>Conducted failure analysis and debugging of robotic components to enhance reliability and reduce downtime.</li>
+          <li>Collaborated with cross-functional teams to refine the production line to withstand shock and vibration.</li>
+        </ul>
+      </section>
+
+      <!-- Projects (Team Projects from resume) -->
+      <section class="resume-section">
+        <h2>Projects</h2>
+        <h3>Autonomous Quadruped Robot <span style="float:right;">Aug 2018 &ndash; May 2019</span></h3>
+        <ul>
+          <li>Developed an autonomous quadruped robot for ABU Robocon 2019, integrating gait planning and motion control for smooth walking. Used SolidWorks for CAD and Python/ROS for control, improving stability on uneven terrain. Performed FEA to reduce frame weight by 15% without sacrificing strength.</li>
+        </ul>
+        <h3>Rugby-Playing Robots <span style="float:right;">Aug 2019 &ndash; May 2020</span></h3>
+        <ul>
+          <li>Designed two autonomous robots for a rugby simulation, including a pneumatic ball-pass mechanism for accurate throws. Developed custom control logic in C++/ROS to coordinate the robots, improving pass speed by 20%. Optimized servo motor and gear selections for faster, more efficient ball handling.</li>
+        </ul>
+        <h3>Arrow-Throwing Robot <span style="float:right;">Aug 2020 &ndash; Jun 2021</span></h3>
+        <ul>
+          <li>Built a robotic system to pick and throw arrows into a moving target. Created CAD models in SolidWorks and optimized components for weight reduction. Implemented motion planning and kinematics in Python/ROS to improve targeting accuracy by 30%.</li>
+        </ul>
+        <h3>Lagori (Seven Stones) Robot <span style="float:right;">Aug 2021 &ndash; Jun 2022</span></h3>
+        <ul>
+          <li>Developed two robots to play the game of Lagori. Designed custom servo-driven grippers for fast, stable block stacking, and implemented ROS-based vision &amp; motion algorithms to increase stacking speed by 25%.</li>
+        </ul>
+        <h3>Autonomous Mobile Robot (AMR) <span style="float:right;">Mar 2021 &ndash; Mar 2022</span></h3>
+        <ul>
+          <li>Created an autonomous mobile robot for material transport and disinfection tasks. Implemented LiDAR-based SLAM with the ROS Navigation Stack for autonomous path planning. Designed a modular chassis with shock absorbers, improving stability on uneven terrain by 30%.</li>
+        </ul>
+        <h3>Robotic Manipulator "OpenManipulatorX" Control <span style="float:right;">Dec 2024</span></h3>
+        <ul>
+          <li>Implemented advanced motion control strategies for an OpenManipulatorX robotic arm, focusing on inverse kinematics, trajectory planning, and torque estimation to improve precision and responsiveness.</li>
+        </ul>
+      </section>
+
+      <!-- Publications -->
+      <section class="resume-section">
+        <h2>Publications</h2>
+        <ul>
+          <li>"Autonomous Mobile Robot Base: Cost-effective solution for research and education applications." <em>Advances in Robotics 2023</em>. DOI: <a href="https://doi.org/10.1145/3610419.3610501">10.1145/3610419.3610501</a>.</li>
+        </ul>
+      </section>
+
+      <!-- Achievements -->
+      <section class="resume-section">
+        <h2>Achievements</h2>
+        <ul>
+          <li><strong>Team Member – Team Automatons (Jul 2018 &ndash; Jun 2022):</strong> Competed in ABU Robocon (international robotics competition); our team placed 2nd in India in 2022.</li>
+          <li><strong>Workshop Instructor:</strong> Organized and taught robotics workshops to mentor first-year engineering students at the college.</li>
+        </ul>
+      </section>
     </div>
+  </main>
 
-    <!-- Interests -->
-    <section class="resume-section">
-      <h2>Interests</h2>
-      <p>Robotics • 3D Printing • Embedded Computing • Computer Vision • Machine Learning</p>
-    </section>
-
-    <!-- Skills -->
-    <section class="resume-section">
-      <h2>Skills</h2>
-      <p><strong>Languages &amp; Frameworks:</strong> C, C++, Java, Python, JavaScript</p>
-      <p><strong>Toolsets / OS:</strong> Ubuntu, Git/GitHub, gcc/g++, TI LaunchPad</p>
-    </section>
-
-    <!-- Education -->
-    <section class="resume-section">
-      <h2>Education</h2>
-      <h3>Worcester Polytechnic Institute (WPI), Worcester MA</h3>
-      <p>B.S. Robotics Engineering (expected&nbsp;Spring&nbsp;2025)</p>
-    </section>
-
-    <!-- Work Experience -->
-    <section class="resume-section">
-      <h2>Work</h2>
-
-      <h3>Web Developer, UH Manoa Board of Publications <span style="float:right;">2015 – Present</span></h3>
-      <ul>
-        <li>Maintain, update, and oversee official college newspaper website</li>
-        <li>Drive, design and build student-community projects for UH Manoa</li>
-      </ul>
-
-      <h3>Help Desk Consultant, UH ITS <span style="float:right;">2015 – 2016</span></h3>
-      <ul>
-        <li>Troubleshot software, hardware and networking issues over phone</li>
-        <li>Answered phone and email responses to the ITS Help Desk</li>
-      </ul>
-    </section>
-
-    <!-- Activities -->
-    <section class="resume-section">
-      <h2>Activities</h2>
-
-      <h3>Software Developer, Center for Renewable Energy &amp; Island Sustainability <span style="float:right;">2016 – Present</span></h3>
-      <ul>
-        <li>Lead developer for weather sensing project</li>
-        <li>Designed firmware for distributed weather sensor network</li>
-        <li>Maintained custom data-collection and storage infrastructure</li>
-      </ul>
-
-      <h3>Professional organization involvement</h3>
-      <p>Chair, ACM Manoa (2016-Present) • Member, IEEE Student Branch (2014-Present) • Webmaster/IT Officer, IEEE Student Branch (2012-2013)</p>
-    </section>
-
-    <!-- Awards -->
-    <section class="resume-section">
-      <h2>Awards</h2>
-      <ul>
-        <li><strong>B+ Scholarship</strong>, State of Hawai‘i (2013-Present)</li>
-        <li><strong>First Place</strong>, Univ. of Hawai‘i Micromouse Competition (2015)</li>
-      </ul>
-    </section>
-
-    <!-- References -->
-    <section class="resume-section">
-      <h2>References</h2>
-      <p>Available upon request</p>
-    </section>
-
-  </div><!-- /resume-main -->
-</main>
-
-<footer>
-  <p><a href="#top">Back to top ↑</a></p>
-</footer>
+  <footer class="wrapper">
+    <p>&copy; 2025 Siddharth Shrotri</p>
+  </footer>
 </body>
 </html>

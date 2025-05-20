@@ -2,60 +2,173 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects – Your Name</title>
+  <title>Projects – Siddharth Shrotri</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/5c4b5e5c10.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header class="wrapper">
-  <nav class="top-nav">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="articles.html">Publications</a>
-    <a href="resume.html">Résumé</a>
-  </nav>
-</header>
+  <header class="wrapper">
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="cad.html">CAD Modeling</a>
+      <a href="resume.html">Résumé</a>
+    </nav>
+  </header>
 
-<main class="wrapper">
-  <h2>Projects</h2>
-  <div class="card-list">
+  <main class="wrapper">
+    <h1>Projects</h1>
+    <p>Here you can explore some of my key robotics projects, including team-based projects from my undergraduate years and course projects from my master’s program. Use the filters below to view projects by category.</p>
 
-    <article class="card">
-      <img src="images/vacay.jpg" alt="Vacay" class="thumb">
-      <div class="card-body">
-        <h3>Vacay</h3>
-        <p class="desc">Responsive web app for travel planning (ICS 415).</p>
-        <div class="tags"><span class="tag">JavaScript</span><span class="tag">Meteor</span><span class="tag">MongoDB</span></div>
-        <a href="vacay.html" class="btn">Read More</a>
+    <!-- Filter Buttons -->
+    <div class="filter-bar" role="group" aria-label="Filter Projects by type">
+      <button onclick="filterProjects('all')">All Projects</button>
+      <button onclick="filterProjects('undergrad')">Undergraduate</button>
+      <button onclick="filterProjects('masters')">Master's</button>
+    </div>
+
+    <!-- Undergraduate Projects Section -->
+    <section id="undergrad-projects">
+      <h2>Undergraduate Team Projects</h2>
+      <div class="card-list">
+        <!-- Quadruped Project Card -->
+        <article class="card">
+          <img src="images/quadruped_placeholder.jpg" alt="Autonomous Quadruped Robot" class="thumb">
+          <div class="card-body">
+            <h3>Autonomous Quadruped Robot</h3>
+            <p class="desc">Designed and developed an autonomous quadruped robot for ABU Robocon 2019, integrating inverse kinematics, gait planning, and motion control for smooth navigation. Utilized SolidWorks for CAD and Python/ROS for control, achieving stable locomotion on uneven terrain. Conducted FEA to reduce the frame weight by 15% without compromising strength.</p>
+            <div class="tags">
+              <span class="tag">ROS</span> <span class="tag">SolidWorks</span> <span class="tag">Python</span>
+            </div>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+          <div class="card-date">Aug 2018 &ndash; May 2019</div>
+        </article>
+
+        <!-- Rugby Robots Project Card -->
+        <article class="card">
+          <img src="images/rugby_placeholder.jpg" alt="Autonomous Rugby-Playing Robots" class="thumb">
+          <div class="card-body">
+            <h3>Rugby-Playing Robots</h3>
+            <p class="desc">Designed two autonomous robots for a rugby game simulation, including a pneumatic ball-passing mechanism for accurate throws. Developed custom control logic in C++/ROS to coordinate both robots, improving pass speed by ~20%. Optimized servo motor selection and gear ratios to increase torque for fast, precise ball handling.</p>
+            <div class="tags">
+              <span class="tag">ROS</span> <span class="tag">C++</span> <span class="tag">Pneumatics</span>
+            </div>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+          <div class="card-date">Aug 2019 &ndash; May 2020</div>
+        </article>
+
+        <!-- Arrow Throwing Project Card -->
+        <article class="card">
+          <img src="images/arrow_placeholder.jpg" alt="Arrow-Throwing Robot" class="thumb">
+          <div class="card-body">
+            <h3>Arrow-Throwing Robot</h3>
+            <p class="desc">Built a robotic system to pick and throw arrows into a moving target. Created the design in SolidWorks and optimized structural components to reduce weight. Implemented motion planning and kinematics algorithms in Python/ROS, improving targeting accuracy by ~30%.</p>
+            <div class="tags">
+              <span class="tag">ROS</span> <span class="tag">Python</span> <span class="tag">SolidWorks</span>
+            </div>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+          <div class="card-date">Aug 2020 &ndash; Jun 2021</div>
+        </article>
+
+        <!-- Lagori Robot Project Card -->
+        <article class="card">
+          <img src="images/lagori_placeholder.jpg" alt="Lagori Game Playing Robots" class="thumb">
+          <div class="card-body">
+            <h3>Lagori (Indian Game) Robot</h3>
+            <p class="desc">Designed custom servo-driven grippers for fast and stable block stacking in the traditional Indian game of Lagori. Implemented ROS-based vision and motion algorithms, increasing object recognition and stacking speed by ~25%.</p>
+            <div class="tags">
+              <span class="tag">ROS</span> <span class="tag">OpenCV</span> <span class="tag">Servo Control</span>
+            </div>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+          <div class="card-date">Aug 2021 &ndash; Jun 2022</div>
+        </article>
+
+        <!-- Autonomous Mobile Robot Project Card -->
+        <article class="card">
+          <img src="images/amr_placeholder.jpg" alt="Autonomous Mobile Robot (AMR)" class="thumb">
+          <div class="card-body">
+            <h3>Autonomous Mobile Robot (AMR)</h3>
+            <p class="desc">Developed an Autonomous Mobile Robot for tasks like material transport and disinfection. Implemented SLAM (LiDAR and ROS Navigation Stack) for real-time path planning. Designed a modular chassis with shock absorbers, improving stability on uneven terrain by ~30%.</p>
+            <div class="tags">
+              <span class="tag">ROS</span> <span class="tag">LiDAR</span> <span class="tag">SLAM</span>
+            </div>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+          <div class="card-date">Mar 2021 &ndash; Mar 2022</div>
+        </article>
+
+        <!-- Robocon Team Participation Card -->
+        <article class="card">
+          <img src="images/robocon_placeholder.jpg" alt="Team Automatons at ABU Robocon" class="thumb">
+          <div class="card-body">
+            <h3>ABU Robocon Competition (Team Automatons)</h3>
+            <p class="desc">Participated in the ABU Robocon international robotics competition as part of WRC Team Automatons (2018–2022). Collaborated with a multidisciplinary team on multiple robots and gained experience in PCB design, prototyping, and debugging. Our team achieved 2nd place nationally in 2022.</p>
+            <!-- No tech tags for competition involvement -->
+            <a href="#" class="btn">Learn More</a>
+          </div>
+          <div class="card-date">Jul 2018 &ndash; Jun 2022</div>
+        </article>
       </div>
-      <span class="card-date">2015</span>
-    </article>
+    </section>
 
-    <article class="card">
-      <img src="images/micromouse.jpg" alt="Micromouse" class="thumb">
-      <div class="card-body">
-        <h3>Micromouse</h3>
-        <p class="desc">Autonomous maze-solving robot (UH Micromouse winner).</p>
-        <div class="tags"><span class="tag">Robotics</span><span class="tag">C++</span><span class="tag">Arduino</span></div>
-        <a href="micromouse.html" class="btn">Read More</a>
+    <!-- Master's Projects Section -->
+    <section id="masters-projects" class="mt-2">
+      <h2>Master's Course Projects</h2>
+      <div class="card-list">
+        <!-- OpenManipulatorX Project Card -->
+        <article class="card">
+          <img src="images/openmanipulatorx_placeholder.jpg" alt="OpenManipulatorX Motion Control project" class="thumb">
+          <div class="card-body">
+            <h3>OpenManipulatorX Motion Control</h3>
+            <p class="desc">Implemented advanced motion control strategies for the OpenManipulatorX robotic arm, focusing on inverse kinematics, trajectory planning, and torque estimation to improve precision and responsiveness.</p>
+            <div class="tags">
+              <span class="tag">ROS</span> <span class="tag">Kinematics</span>
+            </div>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+          <div class="card-date">Dec 2024</div>
+        </article>
+
+        <!-- Placeholder for additional project -->
+        <article class="card">
+          <img src="images/project_placeholder.jpg" alt="Placeholder for upcoming project" class="thumb">
+          <div class="card-body">
+            <h3>Course Project (Coming Soon)</h3>
+            <p class="desc">Another graduate project will be added here soon.</p>
+            <!-- No tags or link for placeholder -->
+          </div>
+          <div class="card-date">2025</div>
+        </article>
       </div>
-      <span class="card-date">2015</span>
-    </article>
+    </section>
+  </main>
 
-    <article class="card">
-      <img src="images/cotton.jpg" alt="Cotton" class="thumb">
-      <div class="card-body">
-        <h3>Cotton</h3>
-        <p class="desc">Interactive text adventure game engine (ICS 313).</p>
-        <div class="tags"><span class="tag">Java</span><span class="tag">GitHub</span></div>
-        <a href="cotton.html" class="btn">Read More</a>
-      </div>
-      <span class="card-date">2014</span>
-    </article>
+  <footer class="wrapper">
+    <p>&copy; 2025 Siddharth Shrotri</p>
+  </footer>
 
-  </div>
-</main>
-
-<footer><p><a href="#top">Back to top ↑</a></p></footer>
+  <script>
+    // Simple filter function to toggle project categories
+    function filterProjects(category) {
+      const undergradSection = document.getElementById('undergrad-projects');
+      const mastersSection = document.getElementById('masters-projects');
+      if (category === 'undergrad') {
+        undergradSection.style.display = '';
+        mastersSection.style.display = 'none';
+      } else if (category === 'masters') {
+        undergradSection.style.display = 'none';
+        mastersSection.style.display = '';
+      } else {
+        // Show all
+        undergradSection.style.display = '';
+        mastersSection.style.display = '';
+      }
+    }
+  </script>
 </body>
 </html>
